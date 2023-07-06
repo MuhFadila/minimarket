@@ -1,0 +1,14 @@
+C:\Users\LENOVO\source\repos\minimarket\bin\Debug\minimarket.exe.config
+C:\Users\LENOVO\source\repos\minimarket\bin\Debug\minimarket.exe
+C:\Users\LENOVO\source\repos\minimarket\bin\Debug\minimarket.pdb
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.csproj.AssemblyReference.cache
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.csproj.SuggestedBindingRedirects.cache
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.Form1.resources
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.Properties.Resources.resources
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.csproj.GenerateResource.cache
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.exe
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.pdb
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.DATA_PELANGGAN.resources
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.DATA_SUPPLIER.resources
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.DATA_BARANG.resources
