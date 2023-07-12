@@ -42,9 +42,10 @@
             this.textBoxharga_jual = new System.Windows.Forms.TextBox();
             this.textBoxjml_barang = new System.Windows.Forms.TextBox();
             this.save = new System.Windows.Forms.Button();
-            this.Clear = new System.Windows.Forms.Button();
             this.Add = new System.Windows.Forms.Button();
             this.BarangbindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.edit = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewBarang)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.BarangbindingSource)).BeginInit();
             this.SuspendLayout();
@@ -152,21 +153,13 @@
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(506, 341);
+            this.save.Location = new System.Drawing.Point(482, 341);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(75, 23);
             this.save.TabIndex = 13;
             this.save.Text = "Save";
             this.save.UseVisualStyleBackColor = true;
-            // 
-            // Clear
-            // 
-            this.Clear.Location = new System.Drawing.Point(623, 341);
-            this.Clear.Name = "Clear";
-            this.Clear.Size = new System.Drawing.Size(75, 23);
-            this.Clear.TabIndex = 14;
-            this.Clear.Text = "Clear";
-            this.Clear.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // Add
             // 
@@ -182,13 +175,34 @@
             // 
             this.BarangbindingSource.CurrentChanged += new System.EventHandler(this.BarangbindingSource_CurrentChanged);
             // 
+            // edit
+            // 
+            this.edit.Location = new System.Drawing.Point(586, 341);
+            this.edit.Name = "edit";
+            this.edit.Size = new System.Drawing.Size(75, 23);
+            this.edit.TabIndex = 16;
+            this.edit.Text = "Edit";
+            this.edit.UseVisualStyleBackColor = true;
+            this.edit.Click += new System.EventHandler(this.edit_Click);
+            // 
+            // delete
+            // 
+            this.delete.Location = new System.Drawing.Point(689, 341);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(75, 23);
+            this.delete.TabIndex = 17;
+            this.delete.Text = "Delete";
+            this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
+            // 
             // DATA_BARANG
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.delete);
+            this.Controls.Add(this.edit);
             this.Controls.Add(this.Add);
-            this.Controls.Add(this.Clear);
             this.Controls.Add(this.save);
             this.Controls.Add(this.textBoxjml_barang);
             this.Controls.Add(this.textBoxharga_jual);
@@ -227,8 +241,9 @@
         private System.Windows.Forms.TextBox textBoxharga_jual;
         private System.Windows.Forms.TextBox textBoxjml_barang;
         private System.Windows.Forms.Button save;
-        private System.Windows.Forms.Button Clear;
         private System.Windows.Forms.Button Add;
         private System.Windows.Forms.BindingSource BarangbindingSource;
+        private System.Windows.Forms.Button edit;
+        private System.Windows.Forms.Button delete;
     }
 }

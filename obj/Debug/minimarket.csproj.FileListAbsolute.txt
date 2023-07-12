@@ -12,3 +12,5 @@ C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.pdb
 C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.DATA_PELANGGAN.resources
 C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.DATA_SUPPLIER.resources
 C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.DATA_BARANG.resources
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.PENJUALAN.resources
+C:\Users\LENOVO\source\repos\minimarket\obj\Debug\minimarket.HISTORI.resources

@@ -47,5 +47,12 @@ namespace minimarket
         {
 
         }
+
+        private void PENJUALAN_Click(object sender, EventArgs e)
+        {
+            Penjualan fe = new Penjualan();
+            fe.Show();
+            this.Hide();
+        }
     }
 }

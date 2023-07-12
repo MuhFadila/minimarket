@@ -37,7 +37,7 @@
             this.DATAPELANGGAN = new System.Windows.Forms.ToolStripMenuItem();
             this.TRANSAKSI = new System.Windows.Forms.ToolStripTextBox();
             this.toolStripDropDownButton2 = new System.Windows.Forms.ToolStripDropDownButton();
-            this.PEMBELIAN = new System.Windows.Forms.ToolStripMenuItem();
+            this.HISTORI = new System.Windows.Forms.ToolStripMenuItem();
             this.PENJUALAN = new System.Windows.Forms.ToolStripMenuItem();
             this.APKMINIMARKET = new System.Windows.Forms.Label();
             this.toolStrip1.SuspendLayout();
@@ -80,21 +80,21 @@
             // DATABARANG
             // 
             this.DATABARANG.Name = "DATABARANG";
-            this.DATABARANG.Size = new System.Drawing.Size(224, 26);
+            this.DATABARANG.Size = new System.Drawing.Size(218, 26);
             this.DATABARANG.Text = "DATA BARANG";
             this.DATABARANG.Click += new System.EventHandler(this.DATABARANG_Click);
             // 
             // DATASUPPLIER
             // 
             this.DATASUPPLIER.Name = "DATASUPPLIER";
-            this.DATASUPPLIER.Size = new System.Drawing.Size(224, 26);
+            this.DATASUPPLIER.Size = new System.Drawing.Size(218, 26);
             this.DATASUPPLIER.Text = "DATA SUPPLIER";
             this.DATASUPPLIER.Click += new System.EventHandler(this.DATASUPPLIER_Click);
             // 
             // DATAPELANGGAN
             // 
             this.DATAPELANGGAN.Name = "DATAPELANGGAN";
-            this.DATAPELANGGAN.Size = new System.Drawing.Size(224, 26);
+            this.DATAPELANGGAN.Size = new System.Drawing.Size(218, 26);
             this.DATAPELANGGAN.Text = "DATA PELANGGAN";
             this.DATAPELANGGAN.Click += new System.EventHandler(this.DATAPELANGGAN_Click);
             // 
@@ -109,7 +109,7 @@
             // 
             this.toolStripDropDownButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.toolStripDropDownButton2.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.PEMBELIAN,
+            this.HISTORI,
             this.PENJUALAN});
             this.toolStripDropDownButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripDropDownButton2.Image")));
             this.toolStripDropDownButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -117,17 +117,18 @@
             this.toolStripDropDownButton2.Size = new System.Drawing.Size(34, 24);
             this.toolStripDropDownButton2.Text = "toolStripDropDownButton2";
             // 
-            // PEMBELIAN
+            // HISTORI
             // 
-            this.PEMBELIAN.Name = "PEMBELIAN";
-            this.PEMBELIAN.Size = new System.Drawing.Size(224, 26);
-            this.PEMBELIAN.Text = "PEMBELIAN";
+            this.HISTORI.Name = "HISTORI";
+            this.HISTORI.Size = new System.Drawing.Size(224, 26);
+            this.HISTORI.Text = "HISTORI";
             // 
             // PENJUALAN
             // 
             this.PENJUALAN.Name = "PENJUALAN";
             this.PENJUALAN.Size = new System.Drawing.Size(224, 26);
             this.PENJUALAN.Text = "PENJUALAN";
+            this.PENJUALAN.Click += new System.EventHandler(this.PENJUALAN_Click);
             // 
             // APKMINIMARKET
             // 
@@ -167,7 +168,7 @@
         private System.Windows.Forms.ToolStripMenuItem DATAPELANGGAN;
         private System.Windows.Forms.ToolStripTextBox TRANSAKSI;
         private System.Windows.Forms.ToolStripDropDownButton toolStripDropDownButton2;
-        private System.Windows.Forms.ToolStripMenuItem PEMBELIAN;
+        private System.Windows.Forms.ToolStripMenuItem HISTORI;
         private System.Windows.Forms.ToolStripMenuItem PENJUALAN;
         private System.Windows.Forms.Label APKMINIMARKET;
     }

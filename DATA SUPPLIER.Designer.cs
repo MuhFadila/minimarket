@@ -28,19 +28,21 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.BACK = new System.Windows.Forms.Button();
             this.dataGridViewSupp = new System.Windows.Forms.DataGridView();
             this.id_supp = new System.Windows.Forms.Label();
             this.nm_supp = new System.Windows.Forms.Label();
-            this.alamat_supp = new System.Windows.Forms.Label();
             this.no_telp = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.save = new System.Windows.Forms.Button();
-            this.clear = new System.Windows.Forms.Button();
+            this.delete = new System.Windows.Forms.Button();
+            this.textBoxid_supp = new System.Windows.Forms.TextBox();
+            this.textBoxnm_supp = new System.Windows.Forms.TextBox();
+            this.textBoxno_telp = new System.Windows.Forms.TextBox();
+            this.SuppbindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.buttonadd = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSupp)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuppbindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // BACK
@@ -62,11 +64,12 @@
             this.dataGridViewSupp.RowTemplate.Height = 24;
             this.dataGridViewSupp.Size = new System.Drawing.Size(401, 346);
             this.dataGridViewSupp.TabIndex = 1;
+            this.dataGridViewSupp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSupp_CellContentClick);
             // 
             // id_supp
             // 
             this.id_supp.AutoSize = true;
-            this.id_supp.Location = new System.Drawing.Point(462, 116);
+            this.id_supp.Location = new System.Drawing.Point(462, 179);
             this.id_supp.Name = "id_supp";
             this.id_supp.Size = new System.Drawing.Size(77, 16);
             this.id_supp.TabIndex = 2;
@@ -75,20 +78,11 @@
             // nm_supp
             // 
             this.nm_supp.AutoSize = true;
-            this.nm_supp.Location = new System.Drawing.Point(462, 173);
+            this.nm_supp.Location = new System.Drawing.Point(462, 236);
             this.nm_supp.Name = "nm_supp";
             this.nm_supp.Size = new System.Drawing.Size(97, 16);
             this.nm_supp.TabIndex = 3;
             this.nm_supp.Text = "Nama Supplier";
-            // 
-            // alamat_supp
-            // 
-            this.alamat_supp.AutoSize = true;
-            this.alamat_supp.Location = new System.Drawing.Point(462, 227);
-            this.alamat_supp.Name = "alamat_supp";
-            this.alamat_supp.Size = new System.Drawing.Size(49, 16);
-            this.alamat_supp.TabIndex = 4;
-            this.alamat_supp.Text = "Alamat";
             // 
             // no_telp
             // 
@@ -99,34 +93,6 @@
             this.no_telp.TabIndex = 5;
             this.no_telp.Text = "No Telp";
             // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(582, 116);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(132, 22);
-            this.textBox1.TabIndex = 6;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(582, 167);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(132, 22);
-            this.textBox2.TabIndex = 7;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(582, 224);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(132, 22);
-            this.textBox3.TabIndex = 8;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(582, 285);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(132, 22);
-            this.textBox4.TabIndex = 9;
-            // 
             // save
             // 
             this.save.Location = new System.Drawing.Point(494, 360);
@@ -135,36 +101,73 @@
             this.save.TabIndex = 10;
             this.save.Text = "Save";
             this.save.UseVisualStyleBackColor = true;
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
-            // clear
+            // delete
             // 
-            this.clear.Location = new System.Drawing.Point(610, 360);
-            this.clear.Name = "clear";
-            this.clear.Size = new System.Drawing.Size(75, 23);
-            this.clear.TabIndex = 11;
-            this.clear.Text = "Clear";
-            this.clear.UseVisualStyleBackColor = true;
+            this.delete.Location = new System.Drawing.Point(647, 360);
+            this.delete.Name = "delete";
+            this.delete.Size = new System.Drawing.Size(75, 23);
+            this.delete.TabIndex = 11;
+            this.delete.Text = "Delete";
+            this.delete.UseVisualStyleBackColor = true;
+            this.delete.Click += new System.EventHandler(this.delete_Click);
+            // 
+            // textBoxid_supp
+            // 
+            this.textBoxid_supp.Location = new System.Drawing.Point(585, 179);
+            this.textBoxid_supp.Name = "textBoxid_supp";
+            this.textBoxid_supp.Size = new System.Drawing.Size(166, 22);
+            this.textBoxid_supp.TabIndex = 12;
+            this.textBoxid_supp.TextChanged += new System.EventHandler(this.textBoxid_supp_TextChanged);
+            // 
+            // textBoxnm_supp
+            // 
+            this.textBoxnm_supp.Location = new System.Drawing.Point(585, 230);
+            this.textBoxnm_supp.Name = "textBoxnm_supp";
+            this.textBoxnm_supp.Size = new System.Drawing.Size(166, 22);
+            this.textBoxnm_supp.TabIndex = 13;
+            this.textBoxnm_supp.TextChanged += new System.EventHandler(this.textBoxnm_supp_TextChanged);
+            // 
+            // textBoxno_telp
+            // 
+            this.textBoxno_telp.Location = new System.Drawing.Point(585, 282);
+            this.textBoxno_telp.Name = "textBoxno_telp";
+            this.textBoxno_telp.Size = new System.Drawing.Size(166, 22);
+            this.textBoxno_telp.TabIndex = 15;
+            this.textBoxno_telp.TextChanged += new System.EventHandler(this.textBoxno_telp_TextChanged);
+            // 
+            // buttonadd
+            // 
+            this.buttonadd.Location = new System.Drawing.Point(570, 115);
+            this.buttonadd.Name = "buttonadd";
+            this.buttonadd.Size = new System.Drawing.Size(75, 23);
+            this.buttonadd.TabIndex = 16;
+            this.buttonadd.Text = "Add";
+            this.buttonadd.UseVisualStyleBackColor = true;
+            this.buttonadd.Click += new System.EventHandler(this.buttonadd_Click);
             // 
             // DATA_SUPPLIER
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.clear);
+            this.Controls.Add(this.buttonadd);
+            this.Controls.Add(this.textBoxno_telp);
+            this.Controls.Add(this.textBoxnm_supp);
+            this.Controls.Add(this.textBoxid_supp);
+            this.Controls.Add(this.delete);
             this.Controls.Add(this.save);
-            this.Controls.Add(this.textBox4);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.no_telp);
-            this.Controls.Add(this.alamat_supp);
             this.Controls.Add(this.nm_supp);
             this.Controls.Add(this.id_supp);
             this.Controls.Add(this.dataGridViewSupp);
             this.Controls.Add(this.BACK);
             this.Name = "DATA_SUPPLIER";
             this.Text = "DATA_SUPPLIER";
+            this.Load += new System.EventHandler(this.DATA_SUPPLIER_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewSupp)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.SuppbindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -176,13 +179,13 @@
         private System.Windows.Forms.DataGridView dataGridViewSupp;
         private System.Windows.Forms.Label id_supp;
         private System.Windows.Forms.Label nm_supp;
-        private System.Windows.Forms.Label alamat_supp;
         private System.Windows.Forms.Label no_telp;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Button save;
-        private System.Windows.Forms.Button clear;
+        private System.Windows.Forms.Button delete;
+        private System.Windows.Forms.TextBox textBoxid_supp;
+        private System.Windows.Forms.TextBox textBoxnm_supp;
+        private System.Windows.Forms.TextBox textBoxno_telp;
+        private System.Windows.Forms.BindingSource SuppbindingSource;
+        private System.Windows.Forms.Button buttonadd;
     }
 }
