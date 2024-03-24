@@ -22,11 +22,11 @@ namespace minimarket
 
         private void DATABARANG_Click(object sender, EventArgs e)
         {
-            {
+            
                 DATA_BARANG fe = new DATA_BARANG();
                 fe.Show();
                 this.Hide();
-            }
+            
         }
 
         private void DATASUPPLIER_Click(object sender, EventArgs e)
@@ -51,6 +51,13 @@ namespace minimarket
         private void PENJUALAN_Click(object sender, EventArgs e)
         {
             Penjualan fe = new Penjualan();
+            fe.Show();
+            this.Hide();
+        }
+
+        private void HISTORI_Click(object sender, EventArgs e)
+        {
+            HISTORI fe = new HISTORI();
             fe.Show();
             this.Hide();
         }

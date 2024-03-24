@@ -67,14 +67,14 @@
             this.dataGridViewBarang.Name = "dataGridViewBarang";
             this.dataGridViewBarang.RowHeadersWidth = 51;
             this.dataGridViewBarang.RowTemplate.Height = 24;
-            this.dataGridViewBarang.Size = new System.Drawing.Size(392, 345);
+            this.dataGridViewBarang.Size = new System.Drawing.Size(736, 142);
             this.dataGridViewBarang.TabIndex = 1;
             this.dataGridViewBarang.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewBarang_CellContentClick);
             // 
             // id_barang
             // 
             this.id_barang.AutoSize = true;
-            this.id_barang.Location = new System.Drawing.Point(490, 120);
+            this.id_barang.Location = new System.Drawing.Point(152, 236);
             this.id_barang.Name = "id_barang";
             this.id_barang.Size = new System.Drawing.Size(67, 16);
             this.id_barang.TabIndex = 2;
@@ -83,7 +83,7 @@
             // nm_barang
             // 
             this.nm_barang.AutoSize = true;
-            this.nm_barang.Location = new System.Drawing.Point(490, 164);
+            this.nm_barang.Location = new System.Drawing.Point(152, 283);
             this.nm_barang.Name = "nm_barang";
             this.nm_barang.Size = new System.Drawing.Size(91, 16);
             this.nm_barang.TabIndex = 3;
@@ -92,7 +92,7 @@
             // harga_beli
             // 
             this.harga_beli.AutoSize = true;
-            this.harga_beli.Location = new System.Drawing.Point(490, 204);
+            this.harga_beli.Location = new System.Drawing.Point(152, 323);
             this.harga_beli.Name = "harga_beli";
             this.harga_beli.Size = new System.Drawing.Size(71, 16);
             this.harga_beli.TabIndex = 4;
@@ -101,7 +101,7 @@
             // harga_jual
             // 
             this.harga_jual.AutoSize = true;
-            this.harga_jual.Location = new System.Drawing.Point(490, 245);
+            this.harga_jual.Location = new System.Drawing.Point(152, 364);
             this.harga_jual.Name = "harga_jual";
             this.harga_jual.Size = new System.Drawing.Size(70, 16);
             this.harga_jual.TabIndex = 5;
@@ -110,7 +110,7 @@
             // jml_barang
             // 
             this.jml_barang.AutoSize = true;
-            this.jml_barang.Location = new System.Drawing.Point(490, 289);
+            this.jml_barang.Location = new System.Drawing.Point(152, 406);
             this.jml_barang.Name = "jml_barang";
             this.jml_barang.Size = new System.Drawing.Size(101, 16);
             this.jml_barang.TabIndex = 6;
@@ -118,42 +118,42 @@
             // 
             // textBoxid_barang
             // 
-            this.textBoxid_barang.Location = new System.Drawing.Point(614, 119);
+            this.textBoxid_barang.Location = new System.Drawing.Point(276, 236);
             this.textBoxid_barang.Name = "textBoxid_barang";
             this.textBoxid_barang.Size = new System.Drawing.Size(122, 22);
             this.textBoxid_barang.TabIndex = 7;
             // 
             // textBoxnm_barang
             // 
-            this.textBoxnm_barang.Location = new System.Drawing.Point(614, 160);
+            this.textBoxnm_barang.Location = new System.Drawing.Point(276, 279);
             this.textBoxnm_barang.Name = "textBoxnm_barang";
             this.textBoxnm_barang.Size = new System.Drawing.Size(122, 22);
             this.textBoxnm_barang.TabIndex = 9;
             // 
             // textBoxharga_beli
             // 
-            this.textBoxharga_beli.Location = new System.Drawing.Point(614, 201);
+            this.textBoxharga_beli.Location = new System.Drawing.Point(276, 320);
             this.textBoxharga_beli.Name = "textBoxharga_beli";
             this.textBoxharga_beli.Size = new System.Drawing.Size(122, 22);
             this.textBoxharga_beli.TabIndex = 10;
             // 
             // textBoxharga_jual
             // 
-            this.textBoxharga_jual.Location = new System.Drawing.Point(614, 242);
+            this.textBoxharga_jual.Location = new System.Drawing.Point(276, 361);
             this.textBoxharga_jual.Name = "textBoxharga_jual";
             this.textBoxharga_jual.Size = new System.Drawing.Size(122, 22);
             this.textBoxharga_jual.TabIndex = 11;
             // 
             // textBoxjml_barang
             // 
-            this.textBoxjml_barang.Location = new System.Drawing.Point(614, 287);
+            this.textBoxjml_barang.Location = new System.Drawing.Point(276, 406);
             this.textBoxjml_barang.Name = "textBoxjml_barang";
             this.textBoxjml_barang.Size = new System.Drawing.Size(122, 22);
             this.textBoxjml_barang.TabIndex = 12;
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(482, 341);
+            this.save.Location = new System.Drawing.Point(457, 276);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(75, 23);
             this.save.TabIndex = 13;
@@ -163,7 +163,7 @@
             // 
             // Add
             // 
-            this.Add.Location = new System.Drawing.Point(572, 73);
+            this.Add.Location = new System.Drawing.Point(561, 204);
             this.Add.Name = "Add";
             this.Add.Size = new System.Drawing.Size(75, 23);
             this.Add.TabIndex = 15;
@@ -177,7 +177,7 @@
             // 
             // edit
             // 
-            this.edit.Location = new System.Drawing.Point(586, 341);
+            this.edit.Location = new System.Drawing.Point(561, 276);
             this.edit.Name = "edit";
             this.edit.Size = new System.Drawing.Size(75, 23);
             this.edit.TabIndex = 16;
@@ -187,7 +187,7 @@
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(689, 341);
+            this.delete.Location = new System.Drawing.Point(664, 276);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(75, 23);
             this.delete.TabIndex = 17;

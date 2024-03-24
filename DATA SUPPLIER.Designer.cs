@@ -62,14 +62,14 @@
             this.dataGridViewSupp.Name = "dataGridViewSupp";
             this.dataGridViewSupp.RowHeadersWidth = 51;
             this.dataGridViewSupp.RowTemplate.Height = 24;
-            this.dataGridViewSupp.Size = new System.Drawing.Size(401, 346);
+            this.dataGridViewSupp.Size = new System.Drawing.Size(436, 346);
             this.dataGridViewSupp.TabIndex = 1;
             this.dataGridViewSupp.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewSupp_CellContentClick);
             // 
             // id_supp
             // 
             this.id_supp.AutoSize = true;
-            this.id_supp.Location = new System.Drawing.Point(462, 179);
+            this.id_supp.Location = new System.Drawing.Point(492, 179);
             this.id_supp.Name = "id_supp";
             this.id_supp.Size = new System.Drawing.Size(77, 16);
             this.id_supp.TabIndex = 2;
@@ -78,7 +78,7 @@
             // nm_supp
             // 
             this.nm_supp.AutoSize = true;
-            this.nm_supp.Location = new System.Drawing.Point(462, 236);
+            this.nm_supp.Location = new System.Drawing.Point(492, 236);
             this.nm_supp.Name = "nm_supp";
             this.nm_supp.Size = new System.Drawing.Size(97, 16);
             this.nm_supp.TabIndex = 3;
@@ -87,7 +87,7 @@
             // no_telp
             // 
             this.no_telp.AutoSize = true;
-            this.no_telp.Location = new System.Drawing.Point(462, 285);
+            this.no_telp.Location = new System.Drawing.Point(492, 285);
             this.no_telp.Name = "no_telp";
             this.no_telp.Size = new System.Drawing.Size(56, 16);
             this.no_telp.TabIndex = 5;
@@ -95,7 +95,7 @@
             // 
             // save
             // 
-            this.save.Location = new System.Drawing.Point(494, 360);
+            this.save.Location = new System.Drawing.Point(524, 360);
             this.save.Name = "save";
             this.save.Size = new System.Drawing.Size(75, 23);
             this.save.TabIndex = 10;
@@ -105,7 +105,7 @@
             // 
             // delete
             // 
-            this.delete.Location = new System.Drawing.Point(647, 360);
+            this.delete.Location = new System.Drawing.Point(677, 360);
             this.delete.Name = "delete";
             this.delete.Size = new System.Drawing.Size(75, 23);
             this.delete.TabIndex = 11;
@@ -115,7 +115,7 @@
             // 
             // textBoxid_supp
             // 
-            this.textBoxid_supp.Location = new System.Drawing.Point(585, 179);
+            this.textBoxid_supp.Location = new System.Drawing.Point(615, 179);
             this.textBoxid_supp.Name = "textBoxid_supp";
             this.textBoxid_supp.Size = new System.Drawing.Size(166, 22);
             this.textBoxid_supp.TabIndex = 12;
@@ -123,7 +123,7 @@
             // 
             // textBoxnm_supp
             // 
-            this.textBoxnm_supp.Location = new System.Drawing.Point(585, 230);
+            this.textBoxnm_supp.Location = new System.Drawing.Point(615, 230);
             this.textBoxnm_supp.Name = "textBoxnm_supp";
             this.textBoxnm_supp.Size = new System.Drawing.Size(166, 22);
             this.textBoxnm_supp.TabIndex = 13;
@@ -131,7 +131,7 @@
             // 
             // textBoxno_telp
             // 
-            this.textBoxno_telp.Location = new System.Drawing.Point(585, 282);
+            this.textBoxno_telp.Location = new System.Drawing.Point(615, 282);
             this.textBoxno_telp.Name = "textBoxno_telp";
             this.textBoxno_telp.Size = new System.Drawing.Size(166, 22);
             this.textBoxno_telp.TabIndex = 15;
@@ -139,7 +139,7 @@
             // 
             // buttonadd
             // 
-            this.buttonadd.Location = new System.Drawing.Point(570, 115);
+            this.buttonadd.Location = new System.Drawing.Point(600, 115);
             this.buttonadd.Name = "buttonadd";
             this.buttonadd.Size = new System.Drawing.Size(75, 23);
             this.buttonadd.TabIndex = 16;

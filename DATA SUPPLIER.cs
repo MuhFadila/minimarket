@@ -78,6 +78,9 @@ namespace minimarket
 
         private void DATA_SUPPLIER_Load(object sender, EventArgs e)
         {
+            
+            
+            
             fetchData();
         }
 

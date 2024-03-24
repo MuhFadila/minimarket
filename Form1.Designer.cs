@@ -122,6 +122,7 @@
             this.HISTORI.Name = "HISTORI";
             this.HISTORI.Size = new System.Drawing.Size(224, 26);
             this.HISTORI.Text = "HISTORI";
+            this.HISTORI.Click += new System.EventHandler(this.HISTORI_Click);
             // 
             // PENJUALAN
             // 
